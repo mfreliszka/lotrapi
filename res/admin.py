@@ -1,3 +1,12 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import (
+    Character,
+    World
+
+)
+
+models = [Character, World]
+
+for m in models:
+    admin.site.register(m)
